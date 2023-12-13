@@ -24,3 +24,6 @@ khazinaseeruddin@khazis-MacBook-Pro testlink12 % docker run -d --name=testlink -
 WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
 ceb0e8073017573544a7770c3149b4ea9494f46052bf287b07b8e9769782c9bd
 
+
+<img width="1357" alt="image" src="https://github.com/khazidevops/testlink/assets/150345653/fa0e0590-93c1-4129-9178-77b7eb159fee">
+
