@@ -1,0 +1,10 @@
+<issuetracker>
+    <dbhost>3.109.234.24:5432</dbhost>
+    <dbname>bugs</dbname>
+    <dbschema>bugs</dbschema>
+    <dbtype>postgres</dbtype>
+    <dbuser>bugs</dbuser>
+    <dbpassword>bugs</dbpassword>
+    <uricreate>3.109.234.24/bugzilla/</uricreate>
+    <uriview>3.109.234.24/bugzilla/show_bug.cgi?id=</uriview>
+</issuetracker>

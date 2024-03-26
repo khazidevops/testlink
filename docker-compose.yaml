@@ -13,6 +13,9 @@ services:
       - MARIADB_USER=tl_testlink
       - MARIADB_DATABASE=tl_testlink
       - MARIADB_ROOT_PASSWORD=YourRootPasswordHere  # Set your desired root password here
+      - MARIADB_SSL_CERT_FILE=/certs/certificate.crt  # Specify SSL certificate file
+      - MARIADB_SSL_KEY_FILE=/certs/private.key        # Specify SSL key file
+      - MARIADB_SSL_CA_FILE=/certs/ca_bundle.crt       # Specify CA bundle file
     networks:
       - testlink-net
 
@@ -22,8 +25,10 @@ services:
     ports:
       - 83:8080
       - 444:8443
+      - 443:443 # SSL port
     volumes:
       - tl-testlink-data:/bitnami/testlink
+      - D:\repo\testlink\certs:/etc/apache2/ssl
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
       - TESTLINK_DATABASE_HOST=tl-mariadb
