@@ -28,7 +28,7 @@ services:
       - 443:443 # SSL port
     volumes:
       - tl-testlink-data:/bitnami/testlink
-      - D:\repo\testlink\certs:/etc/apache2/ssl
+      - /mnt/certs:/etc/apache2/ssl
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
       - TESTLINK_DATABASE_HOST=tl-mariadb
