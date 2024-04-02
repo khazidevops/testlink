@@ -138,4 +138,11 @@ ceb0e8073017573544a7770c3149b4ea9494f46052bf287b07b8e9769782c9bd
 
 <img width="1357" alt="image" src="https://github.com/khazidevops/testlink/assets/150345653/fa0e0590-93c1-4129-9178-77b7eb159fee">
 
+
+Testlink database push to s3 bucket
+
+Setup 1: docker exec tl-mariadb /opt/bitnami/mariadb/bin/mariadb-dump -u root -pYourRootPasswordHere tl_testlink > testlink_backup.sql
+
+setup 2:  aws s3 cp testlink_backup.sql s3://testlink-db/
+
 >>>>>>> 773f7eea86d50433433f9cd340434b557cafa08c
